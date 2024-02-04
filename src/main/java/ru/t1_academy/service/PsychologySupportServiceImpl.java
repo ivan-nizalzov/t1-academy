@@ -12,11 +12,16 @@ public class PsychologySupportServiceImpl implements PsychologySupportService {
 
     @Override
     public String getRandomSupportResponse() {
-        List<String> allPhrase = List.copyOf(supportRepository.psychologySupportMap.keySet());
+        List<String> allPhrase = List.copyOf(supportRepository.getPsychologySupportMap().keySet());
         Random random = new Random();
-        int randomIndex = random.nextInt(allPhrase.size());
 
-        return allPhrase.get(randomIndex);
+        if (allPhrase.size() == 0) {
+            return "No support words has been added!";
+        } else {
+            int randomIndex = random.nextInt(allPhrase.size());
+            return allPhrase.get(randomIndex);
+        }
+
     }
 
     @Override
@@ -26,25 +31,20 @@ public class PsychologySupportServiceImpl implements PsychologySupportService {
 
         if (supportWords.isEmpty()) {
             response = "Support words cannot be empty!";
-
             return response;
         }
 
-        if (supportRepository.psychologySupportMap.containsKey(supportWords)) {
+        if (supportRepository.getPsychologySupportMap().containsKey(supportWords)) {
             StringBuilder sb = new StringBuilder();
             sb.append("The support words have already added: ");
             sb.append(supportWords);
             response = sb.toString();
-
-            return response;
-
         } else {
             supportRepository.psychologySupportMap.put(supportWords, phraseCount);
             response = "Support words are successful added!";
-
-            return response;
         }
 
+        return response;
     }
 
 }
