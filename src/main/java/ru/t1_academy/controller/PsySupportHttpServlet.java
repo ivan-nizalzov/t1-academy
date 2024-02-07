@@ -1,8 +1,10 @@
 package ru.t1_academy.controller;
 
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import ru.t1_academy.service.PsychologySupportService;
 
@@ -10,9 +12,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-
+@WebServlet("/v1/support")
 @NoArgsConstructor(force = true)
-public class PsySuppHttpServlet extends HttpServlet {
+@AllArgsConstructor
+public class PsySupportHttpServlet extends HttpServlet {
     private final PsychologySupportService supportService;
 
     @Override
