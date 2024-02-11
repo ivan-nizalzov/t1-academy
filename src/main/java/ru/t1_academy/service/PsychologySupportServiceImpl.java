@@ -1,14 +1,12 @@
 package ru.t1_academy.service;
 
-import lombok.AllArgsConstructor;
 import ru.t1_academy.repository.PsychologySupportRepository;
 
 import java.util.List;
 import java.util.Random;
 
-@AllArgsConstructor
 public class PsychologySupportServiceImpl implements PsychologySupportService {
-    private final PsychologySupportRepository supportRepository;
+    private final PsychologySupportRepository supportRepository = new PsychologySupportRepository();
 
     @Override
     public String getRandomSupportResponse() {
