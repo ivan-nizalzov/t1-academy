@@ -1,11 +1,11 @@
-package ru.t1_academy.controller;
+package ru.t1academy.servlet;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import ru.t1_academy.service.PsychologySupportService;
-import ru.t1_academy.service.PsychologySupportServiceImpl;
+import ru.t1academy.service.PsySupportService;
+import ru.t1academy.service.PsySupportServiceImpl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,11 @@ import java.io.PrintWriter;
 
 @WebServlet("/v1/support")
 public class PsySupportHttpServlet extends HttpServlet {
-    private final PsychologySupportService supportService = new PsychologySupportServiceImpl();
+    private final PsySupportService supportService;
+
+    public PsySupportHttpServlet(PsySupportService supportService) {
+        this.supportService = supportService;
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

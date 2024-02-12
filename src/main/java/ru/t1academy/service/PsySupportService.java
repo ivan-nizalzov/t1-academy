@@ -1,6 +1,6 @@
-package ru.t1_academy.service;
+package ru.t1academy.service;
 
-public interface PsychologySupportService {
+public interface PsySupportService {
 
     String getRandomSupportResponse();
     String addSupportWords(String phrase);

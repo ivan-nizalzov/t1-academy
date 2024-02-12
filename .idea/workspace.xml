@@ -5,20 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1-consulting/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/PsySupportConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/PsyApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/factory/Autowired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/factory/Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/mapping/GetMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/mapping/PostMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/mapping/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/PsySupportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/PsySupportControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/PsyDispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PsyHandlerExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PsyHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PsyHandlerMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/PsySupportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/PsySupportRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1_academy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1_academy/controller/PsySupportHttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/servlet/PsySupportHttpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1_academy/dispatcher/DispatcherServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1_academy/model/SupportWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/model/SupportPhrase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1_academy/repository/PsychologySupportRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1_academy/service/PsychologySupportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/PsySupportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1_academy/service/PsychologySupportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/PsySupportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1_academy/controller/PsySupportHttpServletTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1_academy/service/PsychologySupportServiceImplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -27,8 +79,13 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2bgZS1EpxutEgXux1Xk3POgCKAq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,7 +94,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ivan/GitHub/T1HomeWork-appcontext",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -50,6 +113,8 @@
       <option name="presentableId" value="Default" />
       <updated>1706638679210</updated>
       <workItem from="1706638680306" duration="160000" />
+      <workItem from="1707720445498" duration="6504000" />
+      <workItem from="1707727686955" duration="22882000" />
     </task>
     <servers />
   </component>

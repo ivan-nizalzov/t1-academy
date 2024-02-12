@@ -1,32 +1,32 @@
-package ru.t1_academy.model;
+package ru.t1academy.model;
+
+import ru.t1academy.context.annotation.stereotype.Entity;
 
 import java.util.Objects;
 
-public class SupportWords {
+@Entity
+public class SupportPhrase {
     private int id;
     private String words;
 
-    public int getId() {
-        return id;
+    public SupportPhrase(Integer id, String words) {
+        this.id = id;
+        this.words = words;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getId() {
+        return id;
     }
 
     public String getWords() {
         return words;
     }
 
-    public void setWords(String words) {
-        this.words = words;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        SupportWords that = (SupportWords) o;
+        SupportPhrase that = (SupportPhrase) o;
         return id == that.id && Objects.equals(words, that.words);
     }
 
