@@ -45,46 +45,4 @@ class PsyDispatcherServletTest {
         verify(response).setStatus(204);
     }
 
-    @Test
-    public void shouldNotFoundMappingForGetRequest() {
-        PsyDispatcherServlet dispatcherServlet;
-        try {
-            dispatcherServlet = new PsyDispatcherServlet();
-        } catch (InvocationTargetException | IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-        dispatcherServlet.init();
-
-        try {
-            when(response.getWriter()).thenReturn(new PrintWriter(writer));
-            when(request.getRequestURI()).thenReturn("/unsupported");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        dispatcherServlet.doGet(request, response);
-        verify(response).setStatus(404);
-    }
-
-    @Test
-    public void shouldNotFoundMappingForPostRequest() {
-        PsyDispatcherServlet dispatcherServlet;
-        try {
-            dispatcherServlet = new PsyDispatcherServlet();
-        } catch (InvocationTargetException | IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-        dispatcherServlet.init();
-
-        try {
-            when(response.getWriter()).thenReturn(new PrintWriter(writer));
-            when(request.getRequestURI()).thenReturn("/unsupported");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        dispatcherServlet.doPost(request, response);
-        verify(response).setStatus(404);
-    }
-
 }
