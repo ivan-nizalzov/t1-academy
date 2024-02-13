@@ -5,7 +5,6 @@ import ru.t1academy.context.annotation.stereotype.Service;
 import ru.t1academy.model.SupportPhrase;
 
 import java.io.IOException;
-import java.util.List;
 
 @Service
 public interface SupportService {

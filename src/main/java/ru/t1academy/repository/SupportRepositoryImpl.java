@@ -29,4 +29,5 @@ public class SupportRepositoryImpl implements SupportRepository {
     public boolean isPhraseAlreadyAdded(String words) {
         return psychologySupportMap.containsKey(words);
     }
+
 }

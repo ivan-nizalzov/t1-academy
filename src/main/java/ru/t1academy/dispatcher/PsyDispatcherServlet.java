@@ -32,7 +32,6 @@ public class PsyDispatcherServlet extends HttpServlet {
         reflections.getTypesAnnotatedWith(Controller.class).forEach(type -> {
             if (type.isInterface()) {
                 controllerMap.put(type, applicationContext.getBean(type));
-                String test = "test";
             }
         });
     }

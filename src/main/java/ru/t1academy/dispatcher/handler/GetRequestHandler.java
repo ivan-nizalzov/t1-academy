@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import ru.t1academy.context.annotation.mapping.GetMapping;
-import ru.t1academy.context.annotation.mapping.PostMapping;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
