@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
-public class PsySupportRepositoryImpl implements PsySupportRepository {
+public class SupportRepositoryImpl implements SupportRepository {
     private final Map<String, SupportPhrase> psychologySupportMap = new ConcurrentHashMap<>();
 
     @Override

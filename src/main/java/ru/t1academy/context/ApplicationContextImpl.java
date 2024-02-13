@@ -6,32 +6,33 @@ import java.lang.reflect.Field;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class PsyApplicationContext implements ApplicationContext {
-    private final Map<String, Object> beans; // Контейнер бинов
+public class ApplicationContextImpl implements ApplicationContext {
+    private final Map<String, Object> beanMap;
 
-    public PsyApplicationContext() {
-        beans = new ConcurrentHashMap<>();
+    public ApplicationContextImpl() {
+        beanMap = new ConcurrentHashMap<>();
     }
 
     @Override
     public void registerBean(String beanName, Object beanInstance) {
-        beans.put(beanName, beanInstance);
+        beanMap.put(beanName, beanInstance);
     }
 
     @Override
     public Object getBean(String beanName) {
-        return beans.get(beanName);
+        return beanMap.get(beanName);
     }
 
     @Override
     public void autowireBeans() {
-        for (Object bean : beans.values()) {
+        for (Object bean : beanMap.values()) {
             autowireBean(bean);
         }
     }
 
-    private <T> T getBean(Class<T> beanClass) {
-        for (Object bean : beans.values()) {
+    @Override
+    public <T> T getBean(Class<T> beanClass) {
+        for (Object bean : beanMap.values()) {
             if (beanClass.isAssignableFrom(bean.getClass())) {
                 return beanClass.cast(bean);
             }
@@ -57,7 +58,7 @@ public class PsyApplicationContext implements ApplicationContext {
         Field[] fields = bean.getClass().getDeclaredFields();
         for (Field field : fields) {
             if (field.isAnnotationPresent(Autowired.class)) {
-                Object dependency = beans.get(field.getName());
+                Object dependency = beanMap.get(field.getName());
                 try {
                     field.setAccessible(true);
                     field.set(bean, dependency);
@@ -67,5 +68,13 @@ public class PsyApplicationContext implements ApplicationContext {
             }
         }
     }
+
+   /* private Object wrapWithLogging(Object object) {
+        return Proxy.newProxyInstance(
+                object.getClass().getClassLoader(),
+                object.getClass().getInterfaces(),
+                new LoggingInvocationHandler(object)
+        );
+    }*/
 
 }

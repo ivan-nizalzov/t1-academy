@@ -6,8 +6,8 @@ import java.util.Objects;
 
 @Entity
 public class SupportPhrase {
-    private int id;
-    private String words;
+    private final int id;
+    private final String words;
 
     public SupportPhrase(Integer id, String words) {
         this.id = id;

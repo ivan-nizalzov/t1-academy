@@ -3,18 +3,25 @@ package ru.t1academy.service;
 import ru.t1academy.context.annotation.factory.Autowired;
 import ru.t1academy.context.annotation.stereotype.Service;
 import ru.t1academy.model.SupportPhrase;
-import ru.t1academy.repository.PsySupportRepository;
+import ru.t1academy.repository.SupportRepository;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
-public class PsySupportServiceImpl implements PsySupportService {
+public class SupportServiceImpl implements SupportService {
     @Autowired
-    private PsySupportRepository supportRepository;
+    private SupportRepository supportRepository;
     private final AtomicInteger idCounter = new AtomicInteger(1);
 
+    public SupportServiceImpl() {
+
+    }
+
+    public SupportServiceImpl(SupportRepository supportRepository) {
+        this.supportRepository = supportRepository;
+    }
 
     @Override
     public String getRandomSupportResponse() {
@@ -48,6 +55,12 @@ public class PsySupportServiceImpl implements PsySupportService {
 
         return response;
     }
+
+    @Override
+    public List<SupportPhrase> getAllSupportPhrases() {
+        return supportRepository.getAllSupportPhrases();
+    }
+
 
     private SupportPhrase makePhrase(String words) {
         Integer id = idCounter.getAndIncrement();

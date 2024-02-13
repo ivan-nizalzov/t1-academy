@@ -4,9 +4,12 @@ import ru.t1academy.model.SupportPhrase;
 
 import java.util.List;
 
-public interface PsySupportRepository {
+public interface SupportRepository {
     SupportPhrase getSupportPhrase(String key);
+
     void addSupportPhrase(SupportPhrase words);
+
     List<SupportPhrase> getAllSupportPhrases();
+
     boolean isPhraseAlreadyAdded(String words);
 }
