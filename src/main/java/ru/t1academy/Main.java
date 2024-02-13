@@ -4,7 +4,7 @@ import ru.t1academy.dispatcher.PsyDispatcherServlet;
 
 public class Main {
     public static void main(String[] args) {
-        PsyDispatcherServlet dispatcherServlet = new PsyDispatcherServlet();
+
     }
 
 }

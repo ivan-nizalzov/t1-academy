@@ -1,33 +1,27 @@
 package ru.t1academy.controller;
 
-import ru.t1academy.context.annotation.factory.Autowired;
-import ru.t1academy.context.annotation.mapping.GetMapping;
-import ru.t1academy.context.annotation.mapping.PostMapping;
 import ru.t1academy.context.annotation.stereotype.Controller;
+import ru.t1academy.model.SupportPhrase;
 import ru.t1academy.service.SupportService;
+
+import java.io.IOException;
 
 @Controller
 public class SupportControllerImpl implements SupportController {
-    @Autowired
-    private SupportService supportService;
-
-    public SupportControllerImpl() {
-
-    }
+    public SupportService supportService;
 
     public SupportControllerImpl(SupportService supportService) {
         this.supportService = supportService;
     }
 
     @Override
-    @PostMapping("/v1/support")
-    public void addSupportPhrase(String words) {
-        supportService.addSupportWords(words);
+    public void addSupportPhrase(SupportPhrase supportPhrase) throws IOException {
+        supportService.addSupportPhrase(supportPhrase);
     }
 
     @Override
-    @GetMapping("/v1/support")
-    public String getRandomSupportPhrase() {
-        return supportService.getRandomSupportResponse();
+    public SupportPhrase getRandomSupportPhrase() {
+        return supportService.getRandomSupportPhrase();
     }
+
 }

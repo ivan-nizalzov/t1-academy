@@ -1,15 +1,13 @@
 package ru.t1academy.repository;
 
-import ru.t1academy.model.SupportPhrase;
+import ru.t1academy.context.annotation.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface SupportRepository {
-    SupportPhrase getSupportPhrase(String key);
-
-    void addSupportPhrase(SupportPhrase words);
-
-    List<SupportPhrase> getAllSupportPhrases();
-
+    void addSupportPhrase(String SupportPhrase);
+    List<String> getAllSupportPhrases();
     boolean isPhraseAlreadyAdded(String words);
+
 }

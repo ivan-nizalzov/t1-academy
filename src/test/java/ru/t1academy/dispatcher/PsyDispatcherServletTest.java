@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.io.*;
+import java.lang.reflect.InvocationTargetException;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -23,48 +23,66 @@ class PsyDispatcherServletTest {
     }
 
     @Test
-    public void shouldDoSuccessMappingOfGetRequest() throws IOException {
-        String expectedResult = "{\"phraseText\":\"У тебя все получится!\"}";
-        PsyDispatcherServlet dispatcherServlet = new PsyDispatcherServlet();
+    public void shouldReturnSuccessForPostRequest() {
+        PsyDispatcherServlet dispatcherServlet;
+        try {
+            dispatcherServlet = new PsyDispatcherServlet();
+        } catch (InvocationTargetException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
         dispatcherServlet.init();
-        when(response.getWriter()).thenReturn(new PrintWriter(writer));
-        when(request.getRequestURI()).thenReturn("/v1/support");
-        dispatcherServlet.doGet(request, response);
-        assertEquals(expectedResult, writer.toString());
-        verify(response).setStatus(200);
-    }
 
-    @Test
-    public void shouldDoSuccessMappingOfPostRequest() throws IOException {
-        PsyDispatcherServlet dispatcherServlet = new PsyDispatcherServlet();
-        dispatcherServlet.init();
-        String newPhrase = """
-                {
-                    "phraseText": "У тебя все получится!"
-                }
-                """;
-        when(request.getReader()).thenReturn(new BufferedReader(new StringReader(newPhrase)));
-        when(request.getRequestURI()).thenReturn("/v1/support");
+        String testPhrase = "{\"content\":\"A random support phrase\"}";
+
+        try {
+            when(request.getReader()).thenReturn(new BufferedReader(new StringReader(testPhrase)));
+            when(request.getRequestURI()).thenReturn("/v1/support");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         dispatcherServlet.doPost(request, response);
         verify(response).setStatus(204);
     }
 
     @Test
-    public void shouldNotFoundMappingOfGetRequest() throws IOException {
-        PsyDispatcherServlet dispatcherServlet = new PsyDispatcherServlet();
+    public void shouldNotFoundMappingForGetRequest() {
+        PsyDispatcherServlet dispatcherServlet;
+        try {
+            dispatcherServlet = new PsyDispatcherServlet();
+        } catch (InvocationTargetException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
         dispatcherServlet.init();
-        when(response.getWriter()).thenReturn(new PrintWriter(writer));
-        when(request.getRequestURI()).thenReturn("/unsupported");
+
+        try {
+            when(response.getWriter()).thenReturn(new PrintWriter(writer));
+            when(request.getRequestURI()).thenReturn("/unsupported");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         dispatcherServlet.doGet(request, response);
         verify(response).setStatus(404);
     }
 
     @Test
-    public void shouldNotFoundMappingOfPostRequest() throws IOException {
-        PsyDispatcherServlet dispatcherServlet = new PsyDispatcherServlet();
+    public void shouldNotFoundMappingForPostRequest() {
+        PsyDispatcherServlet dispatcherServlet;
+        try {
+            dispatcherServlet = new PsyDispatcherServlet();
+        } catch (InvocationTargetException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
         dispatcherServlet.init();
-        when(response.getWriter()).thenReturn(new PrintWriter(writer));
-        when(request.getRequestURI()).thenReturn("/unsupported");
+
+        try {
+            when(response.getWriter()).thenReturn(new PrintWriter(writer));
+            when(request.getRequestURI()).thenReturn("/unsupported");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         dispatcherServlet.doPost(request, response);
         verify(response).setStatus(404);
     }

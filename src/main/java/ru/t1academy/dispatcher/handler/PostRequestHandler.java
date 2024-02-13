@@ -31,11 +31,11 @@ public class PostRequestHandler implements RequestHandler {
                 try {
                     StringBuilder sb = new StringBuilder();
                     request.getReader().lines().forEach(sb::append);
-                    Optional<Class<?>> param = Arrays.stream(first.get().getParameterTypes()).findFirst();
+                    Optional<Class<?>> parameter = Arrays.stream(first.get().getParameterTypes()).findFirst();
                     Object result;
 
-                    if (param.isPresent()) {
-                        result = first.get().invoke(object, objectMapper.readValue(sb.toString(), param.get()));
+                    if (parameter.isPresent()) {
+                        result = first.get().invoke(object, objectMapper.readValue(sb.toString(), parameter.get()));
                     } else {
                         result = first.get().invoke(object);
                     }
