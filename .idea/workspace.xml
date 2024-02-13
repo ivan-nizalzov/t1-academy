@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="changed README.md">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Bean.java" afterDir="false" />
+    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="fixed DispatcherServlet and ApplicationContext">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContextImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContextImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/factory/Autowired.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/PsyDispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/PsyDispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PostRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PostRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/model/SupportPhrase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/model/SupportPhrase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/context/PsyApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/context/PsyApplicationContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/dispatcher/PsyDispatcherServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/dispatcher/PsyDispatcherServletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/service/SupportServiceImplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +168,7 @@
       <workItem from="1706638680306" duration="160000" />
       <workItem from="1707720445498" duration="6504000" />
       <workItem from="1707727686955" duration="23137000" />
-      <workItem from="1707804517376" duration="12690000" />
+      <workItem from="1707804517376" duration="13625000" />
     </task>
     <task id="LOCAL-00001" summary="added ApplicationContext">
       <created>1707753664511</created>
@@ -212,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707753823981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed DispatcherServlet and ApplicationContext">
+      <created>1707817617889</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707817617889</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +207,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added ApplicationContext" />
     <MESSAGE value="changed README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed README.md" />
+    <MESSAGE value="fixed DispatcherServlet and ApplicationContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed DispatcherServlet and ApplicationContext" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
