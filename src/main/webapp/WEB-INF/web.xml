@@ -8,7 +8,7 @@
 
     <servlet>
         <servlet-name>psySupportServlet</servlet-name>
-        <servlet-class>ru.t1_academy.controller.PsySupportHttpServlet</servlet-class>
+        <servlet-class>ru.t1academy.dispatcher.PsyDispatcherServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

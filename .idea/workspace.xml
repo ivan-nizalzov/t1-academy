@@ -4,21 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1-consulting/Main.java" afterDir="false" />
+    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="fixed DispatcherServlet and ApplicationContext">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -27,8 +43,13 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2bgZS1EpxutEgXux1Xk3POgCKAq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,10 +58,105 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ivan/GitHub/innotech_backend-app_context",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.PsyDispatcherServletTest.shouldReturnSuccessForPostRequest">
+    <configuration name="PsyApplicationContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="help-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.t1academy.context.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.t1academy.context" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.context.PsyApplicationContextTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PsyDispatcherServletTest.shouldReturnSuccessForPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="help-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.t1academy.dispatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.t1academy.dispatcher" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.dispatcher.PsyDispatcherServletTest" />
+      <option name="METHOD_NAME" value="shouldReturnSuccessForPostRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportControllerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="help-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.t1academy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportControllerImplTest.shouldGetPhraseFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="help-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.t1academy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerImplTest" />
+      <option name="METHOD_NAME" value="shouldGetPhraseFromList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="help-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.t1academy.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.t1academy.service" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.service.SupportServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PsyDispatcherServletTest.shouldReturnSuccessForPostRequest" />
+        <item itemvalue="JUnit.PsyApplicationContextTest" />
+        <item itemvalue="JUnit.SupportServiceImplTest" />
+        <item itemvalue="JUnit.SupportControllerImplTest" />
+        <item itemvalue="JUnit.SupportControllerImplTest.shouldGetPhraseFromList" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,10 +166,62 @@
       <option name="presentableId" value="Default" />
       <updated>1706638679210</updated>
       <workItem from="1706638680306" duration="160000" />
+      <workItem from="1707720445498" duration="6504000" />
+      <workItem from="1707727686955" duration="23137000" />
+      <workItem from="1707804517376" duration="13625000" />
     </task>
+    <task id="LOCAL-00001" summary="added ApplicationContext">
+      <created>1707753664511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707753664511</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed README.md">
+      <created>1707753798763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707753798763</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changed README.md">
+      <created>1707753823981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707753823981</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed DispatcherServlet and ApplicationContext">
+      <created>1707817617889</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707817617889</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added ApplicationContext" />
+    <MESSAGE value="changed README.md" />
+    <MESSAGE value="fixed DispatcherServlet and ApplicationContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed DispatcherServlet and ApplicationContext" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="jdk.proxy2.$Proxy67" memberName="h" />
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
+        <PinnedItemInfo parentTag="ru.t1academy.logging.LoggingInvocationHandler" memberName="logger" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/t1_academy$PsyDispatcherServletTest_shouldReturnSuccessForPostRequest.ic" NAME="PsyDispatcherServletTest.shouldReturnSuccessForPostRequest Coverage Results" MODIFIED="1707815985691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.t1academy.dispatcher.*</FILTER>
+    </SUITE>
   </component>
 </project>
