@@ -4,8 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="fixed DispatcherServlet and ApplicationContext">
+    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="refactored DispatcherServlet">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/MessageQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Subscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/SupportServiceMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContextImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContextImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/factory/Logged.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/mapping/GetMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/mapping/PostMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Bean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Configuration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportControllerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/GetRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/GetRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PostRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PostRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/context/PsyApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/context/PsyApplicationContextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dispatcher-servlet" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +64,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -60,12 +92,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ivan/GitHub/innotech_backend-app_context",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "/home/ivan/GitHub/java-explore-with-me",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "63bab399f9ab0dcac909bf8893942b3a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -101,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportControllerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="help-service" />
       <extension name="coverage">
         <pattern>
@@ -110,13 +144,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerImplTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportControllerImplTest.shouldGetPhraseFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportControllerTest.shouldGetPhraseFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="help-service" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +159,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerImplTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
       <option name="METHOD_NAME" value="shouldGetPhraseFromList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -147,13 +181,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InMemoryMessageBroker" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="in-memory--message-broker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.messageBroker.InMemoryMessageBroker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportServiceMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="help-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.SupportServiceMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PsyDispatcherServletTest.shouldReturnSuccessForPostRequest" />
         <item itemvalue="JUnit.PsyApplicationContextTest" />
         <item itemvalue="JUnit.SupportServiceImplTest" />
-        <item itemvalue="JUnit.SupportControllerImplTest" />
-        <item itemvalue="JUnit.SupportControllerImplTest.shouldGetPhraseFromList" />
+        <item itemvalue="JUnit.SupportControllerTest" />
+        <item itemvalue="JUnit.SupportControllerTest.shouldGetPhraseFromList" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +216,12 @@
       <workItem from="1706638680306" duration="160000" />
       <workItem from="1707720445498" duration="6504000" />
       <workItem from="1707727686955" duration="23137000" />
-      <workItem from="1707804517376" duration="13625000" />
+      <workItem from="1707804517376" duration="14761000" />
+      <workItem from="1707838348316" duration="37000" />
+      <workItem from="1707839862197" duration="17000" />
+      <workItem from="1708322273394" duration="818000" />
+      <workItem from="1708356482525" duration="1109000" />
+      <workItem from="1708361352135" duration="1693000" />
     </task>
     <task id="LOCAL-00001" summary="added ApplicationContext">
       <created>1707753664511</created>
@@ -198,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707817617889</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactored DispatcherServlet">
+      <created>1707818973957</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707818973957</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +268,8 @@
     <MESSAGE value="added ApplicationContext" />
     <MESSAGE value="changed README.md" />
     <MESSAGE value="fixed DispatcherServlet and ApplicationContext" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed DispatcherServlet and ApplicationContext" />
+    <MESSAGE value="refactored DispatcherServlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored DispatcherServlet" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

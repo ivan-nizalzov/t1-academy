@@ -1,18 +1,16 @@
 package ru.t1academy.repository;
 
-import ru.t1academy.context.annotation.stereotype.Repository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
+@RequiredArgsConstructor
 public class SupportRepositoryImpl implements SupportRepository {
     private final Map<String, Integer> psychologySupportMap = new ConcurrentHashMap<>();
-
-    public SupportRepositoryImpl() {
-
-    }
 
     @Override
     public void addSupportPhrase(String supportPhrase) {

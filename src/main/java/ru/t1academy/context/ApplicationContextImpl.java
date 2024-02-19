@@ -1,8 +1,6 @@
 package ru.t1academy.context;
 
 import org.reflections.Reflections;
-import ru.t1academy.context.annotation.stereotype.Bean;
-import ru.t1academy.context.annotation.stereotype.Configuration;
 import ru.t1academy.logging.LoggingInvocationHandler;
 
 import java.lang.reflect.*;

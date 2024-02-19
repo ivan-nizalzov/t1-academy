@@ -9,9 +9,9 @@ import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
 
-class SupportControllerImplTest {
+class SupportControllerTest {
     private static final SupportService supportService = Mockito.mock(SupportService.class);
-    private final SupportController supportController = new SupportControllerImpl(supportService);
+    private final SupportController supportController = new SupportController(supportService);
 
     @Test
     public void shouldGetPhraseFromList() {

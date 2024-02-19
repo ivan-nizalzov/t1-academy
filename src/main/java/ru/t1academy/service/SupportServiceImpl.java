@@ -1,6 +1,8 @@
 package ru.t1academy.service;
 
-import ru.t1academy.context.annotation.stereotype.Service;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 import ru.t1academy.model.SupportPhrase;
 import ru.t1academy.repository.SupportRepository;
 
@@ -8,18 +10,18 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
+@Slf4j
 @Service
+@RequiredArgsConstructor
 public class SupportServiceImpl implements SupportService {
-    public SupportRepository supportRepository;
-
-    public SupportServiceImpl(SupportRepository supportRepository) {
-        this.supportRepository = supportRepository;
-    }
+    private final SupportRepository supportRepository;
 
     @Override
     public SupportPhrase getRandomSupportPhrase() {
         List<String> allPhrases = supportRepository.getAllSupportPhrases();
         Collections.shuffle(allPhrases);
+
+        log.info("Get a random support phrase.");
 
         return allPhrases.stream()
                 .findFirst()
@@ -37,6 +39,7 @@ public class SupportServiceImpl implements SupportService {
             throw new IOException("The support words have already added!");
         } else {
             supportRepository.addSupportPhrase(supportPhrase.content());
+            log.info("Added new support phrase: {}", supportPhrase.content());
         }
 
     }
