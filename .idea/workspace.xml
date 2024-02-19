@@ -4,35 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="refactored DispatcherServlet">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/MessageQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Publisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/SupportServiceMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContextImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/ApplicationContextImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/factory/Logged.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/mapping/GetMapping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/mapping/PostMapping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Bean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Configuration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Entity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Repository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/context/annotation/stereotype/Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportControllerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/GetRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/GetRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PostRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dispatcher/handler/PostRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/context/PsyApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/context/PsyApplicationContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +198,7 @@
       <workItem from="1707839862197" duration="17000" />
       <workItem from="1708322273394" duration="818000" />
       <workItem from="1708356482525" duration="1109000" />
-      <workItem from="1708361352135" duration="1693000" />
+      <workItem from="1708361352135" duration="3180000" />
     </task>
     <task id="LOCAL-00001" summary="added ApplicationContext">
       <created>1707753664511</created>
@@ -258,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707818973957</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <created>1708363264225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708363264225</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +253,8 @@
     <MESSAGE value="changed README.md" />
     <MESSAGE value="fixed DispatcherServlet and ApplicationContext" />
     <MESSAGE value="refactored DispatcherServlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored DispatcherServlet" />
+    <MESSAGE value="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
