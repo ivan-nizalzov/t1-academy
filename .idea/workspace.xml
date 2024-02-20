@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <change afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/annotation/Subscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisherImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/queue/MessageQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/subscriber/MessageSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/InMemoryMessageBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/InMemoryMessageBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/MessageQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/queue/MessageQueueImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Publisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/subscriber/MessageSubscriberImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory--message-broker/src/test/java/ru/t1academy/messageBroker/InMemoryMessageBrokerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/src/test/java/ru/t1academy/messageBroker/InMemoryMessageBrokerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -70,13 +86,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/home/ivan/GitHub/java-explore-with-me",
+    "last_opened_file_path": "/home/ivan/GitHub/innotech_hw1-dev3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "63bab399f9ab0dcac909bf8893942b3a",
+    "spring.configuration.checksum": "8122489664822a3b95ea24f8a0334e65",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -158,6 +174,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="help-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="help-service" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InMemoryMessageBroker" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="in-memory--message-broker" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.messageBroker.InMemoryMessageBroker" />
@@ -198,7 +227,8 @@
       <workItem from="1707839862197" duration="17000" />
       <workItem from="1708322273394" duration="818000" />
       <workItem from="1708356482525" duration="1109000" />
-      <workItem from="1708361352135" duration="3180000" />
+      <workItem from="1708361352135" duration="3253000" />
+      <workItem from="1708411396203" duration="2531000" />
     </task>
     <task id="LOCAL-00001" summary="added ApplicationContext">
       <created>1707753664511</created>
@@ -242,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708363264225</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <created>1708364729999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708364729999</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

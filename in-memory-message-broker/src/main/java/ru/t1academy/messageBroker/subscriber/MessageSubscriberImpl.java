@@ -1,12 +1,17 @@
-package ru.t1academy.messageBroker;
+package ru.t1academy.messageBroker.subscriber;
 
-public class Subscriber {
+import ru.t1academy.messageBroker.queue.MessageQueue;
+
+public class MessageSubscriberImpl implements MessageSubscriber {
     private final MessageQueue queue;
 
-    public Subscriber(MessageQueue queue) {
+    public MessageSubscriberImpl(MessageQueue queue) {
         this.queue = queue;
     }
 
+
+
+   /* @Override
     public void run() {
         while (true) {
             String message = queue.poll();
@@ -22,6 +27,6 @@ public class Subscriber {
                 }
             }
         }
-    }
+    }*/
 
 }

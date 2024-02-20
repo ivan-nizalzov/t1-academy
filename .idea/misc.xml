@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/support-servie/pom.xml" />
         <option value="$PROJECT_DIR$/in-memory--message-broker/pom.xml" />
+        <option value="$PROJECT_DIR$/in-memory-message-broker/pom.xml" />
       </list>
     </option>
   </component>
