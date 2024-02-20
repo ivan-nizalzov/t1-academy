@@ -1,0 +1,27 @@
+diff --git a/in-memory--message-broker/.mvn/wrapper/maven-wrapper.properties b/in-memory-message-broker/.mvn/wrapper/maven-wrapper.properties
+rename from in-memory--message-broker/.mvn/wrapper/maven-wrapper.properties
+rename to in-memory-message-broker/.mvn/wrapper/maven-wrapper.properties
+diff --git a/in-memory--message-broker/src/test/java/ru/t1academy/messageBroker/InMemoryMessageBrokerTests.java b/in-memory-message-broker/src/test/java/ru/t1academy/messageBroker/InMemoryMessageBrokerTests.java
+rename from in-memory--message-broker/src/test/java/ru/t1academy/messageBroker/InMemoryMessageBrokerTests.java
+rename to in-memory-message-broker/src/test/java/ru/t1academy/messageBroker/InMemoryMessageBrokerTests.java
+diff --git a/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Publisher.java b/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/Publisher.java
+rename from in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Publisher.java
+rename to in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/Publisher.java
+diff --git a/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/InMemoryMessageBroker.java b/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/InMemoryMessageBroker.java
+rename from in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/InMemoryMessageBroker.java
+rename to in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/InMemoryMessageBroker.java
+diff --git a/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Subscriber.java b/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/Subscriber.java
+rename from in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/Subscriber.java
+rename to in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/Subscriber.java
+diff --git a/in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/MessageQueue.java b/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/MessageQueue.java
+rename from in-memory--message-broker/src/main/java/ru/t1academy/messageBroker/MessageQueue.java
+rename to in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/MessageQueue.java
+diff --git a/in-memory--message-broker/pom.xml b/in-memory-message-broker/pom.xml
+rename from in-memory--message-broker/pom.xml
+rename to in-memory-message-broker/pom.xml
+diff --git a/in-memory--message-broker/.gitignore b/in-memory-message-broker/.gitignore
+rename from in-memory--message-broker/.gitignore
+rename to in-memory-message-broker/.gitignore
+diff --git a/in-memory--message-broker/src/main/resources/application.properties b/in-memory-message-broker/src/main/resources/application.properties
+rename from in-memory--message-broker/src/main/resources/application.properties
+rename to in-memory-message-broker/src/main/resources/application.properties

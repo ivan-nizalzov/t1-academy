@@ -1,6 +1,6 @@
 package ru.t1academy.messageBroker.publisher;
 
-public interface MessagePublisher {
-    void publishMessage(String message);
+public interface MessagePublisher<T> {
+    void publishMessage(T message);
 
 }

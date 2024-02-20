@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_20_02_2024,_21_56_[Changes]1" date="1708455424655" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_02_2024,_21_56_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 20.02.2024, 21:56 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="in-memory--message-broker/mvnw" />
+    <option name="AFTER_PATH" value="in-memory-message-broker/mvnw" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_02_2024,_21_56_[Changes]1/mvnw" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="in-memory--message-broker/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="AFTER_PATH" value="in-memory-message-broker/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_02_2024,_21_56_[Changes]1/maven-wrapper.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="in-memory--message-broker/mvnw.cmd" />
+    <option name="AFTER_PATH" value="in-memory-message-broker/mvnw.cmd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_02_2024,_21_56_[Changes]1/mvnw.cmd" />
+  </binary>
+</changelist>

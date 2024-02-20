@@ -14,7 +14,7 @@ class SupportControllerTest {
     private final SupportController supportController = new SupportController(supportService);
 
     @Test
-    public void shouldGetPhraseFromList() {
+    void shouldGetPhraseFromList() {
         String resultPhrase = "Test words";
         SupportPhrase testPhrase = new SupportPhrase(resultPhrase);
         Mockito.when(supportService.getRandomSupportPhrase()).thenReturn(testPhrase);
@@ -24,7 +24,7 @@ class SupportControllerTest {
     }
 
     @Test
-    public void shouldPostPhraseToList() throws IOException {
+    void shouldPostPhraseToList() throws IOException {
         String newPhrase = "New Test Words";
         SupportPhrase testPhrase = new SupportPhrase(newPhrase);
         supportController.addSupportPhrase(testPhrase);

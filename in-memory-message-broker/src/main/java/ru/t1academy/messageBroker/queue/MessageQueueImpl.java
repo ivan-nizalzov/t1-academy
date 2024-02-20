@@ -1,31 +1,19 @@
 package ru.t1academy.messageBroker.queue;
 
-import ru.t1academy.messageBroker.subscriber.MessageSubscriber;
-
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class MessageQueueImpl implements MessageQueue, Runnable {
-    private final BlockingQueue<String> queue = new LinkedBlockingQueue<>();
+public class MessageQueueImpl<T> implements MessageQueue<T> {
+    private final BlockingQueue<T> queue = new LinkedBlockingQueue<>();
 
     @Override
-    public boolean publish(String message) {
-        return queue.offer(message);
+    public void publish(T message) {
+        queue.add(message);
     }
 
     @Override
-    public String poll() {
+    public T poll() {
         return queue.poll();
-    }
-
-    @Override
-    public void subscribe(MessageSubscriber messageSubscriber) {
-        //TODO
-    }
-
-    @Override
-    public void run() {
-        //TODO
     }
 
 }

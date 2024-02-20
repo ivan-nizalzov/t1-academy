@@ -9,8 +9,8 @@ import ru.t1academy.messageBroker.publisher.MessagePublisher;
 import ru.t1academy.messageBroker.publisher.MessagePublisherImpl;
 import ru.t1academy.messageBroker.queue.MessageQueue;
 import ru.t1academy.messageBroker.queue.MessageQueueImpl;
-import ru.t1academy.messageBroker.subscriber.MessageSubscriber;
-import ru.t1academy.messageBroker.subscriber.MessageSubscriberImpl;
+import ru.t1academy.subscriber.MessageSubscriber;
+import ru.t1academy.subscriber.MessageSubscriberImpl;
 import ru.t1academy.repository.SupportRepository;
 import ru.t1academy.repository.SupportRepositoryImpl;
 import ru.t1academy.service.SupportService;
@@ -50,8 +50,8 @@ public class SupportConfig {
     }
 
     @Bean
-    public MessageSubscriber subscriber(MessageQueue messageQueue) {
-        return new MessageSubscriberImpl(messageQueue);
+    public MessageSubscriber subscriber(MessageQueue messageQueue, SupportService supportService) {
+        return new MessageSubscriberImpl(messageQueue, supportService);
     }
 
 }

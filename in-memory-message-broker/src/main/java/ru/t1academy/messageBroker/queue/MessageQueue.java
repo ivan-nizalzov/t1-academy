@@ -1,11 +1,8 @@
 package ru.t1academy.messageBroker.queue;
 
-import ru.t1academy.messageBroker.subscriber.MessageSubscriber;
+public interface MessageQueue<T> {
+    void publish(T message);
 
-public interface MessageQueue {
-    boolean publish(String message);
-    String poll();
-
-    void subscribe(MessageSubscriber messageSubscriber);
+    T poll();
 
 }
