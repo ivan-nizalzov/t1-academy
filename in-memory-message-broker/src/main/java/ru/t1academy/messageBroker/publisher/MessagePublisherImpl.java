@@ -1,17 +1,17 @@
 package ru.t1academy.messageBroker.publisher;
 
-import ru.t1academy.messageBroker.queue.MessageQueue;
+import ru.t1academy.messageBroker.broker.MessageBroker;
 
 public class MessagePublisherImpl<T> implements MessagePublisher<T> {
-    private final MessageQueue<T> queue;
+    private final MessageBroker<T> messageBroker;
 
-    public MessagePublisherImpl(MessageQueue<T> queue) {
-        this.queue = queue;
+    public MessagePublisherImpl(MessageBroker<T> messageBroker) {
+        this.messageBroker = messageBroker;
     }
 
     @Override
-    public void publishMessage(T message) {
-        queue.publish(message);
+    public void publish(T message) {
+        messageBroker.publish(message);
     }
 
 }

@@ -1,9 +1,9 @@
-package ru.t1academy.messageBroker.queue;
+package ru.t1academy.messageBroker.broker;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class MessageQueueImpl<T> implements MessageQueue<T> {
+public class MessageBrokerImpl<T> implements MessageBroker<T> {
     private final BlockingQueue<T> queue = new LinkedBlockingQueue<>();
 
     @Override

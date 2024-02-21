@@ -14,7 +14,11 @@
     <groupId>ru.t1-academy</groupId>
     <artifactId>help-service</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
+
+    <!--<modules>
+        <module>in-memory-message-broker</module>
+    </modules>-->
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -28,35 +32,22 @@
             <artifactId>tomcat-embed-core</artifactId>
             <version>10.1.16</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>5.7.0</version> <!-- Используйте актуальную версию -->
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.9.2</version> <!-- Используйте актуальную версию JUnit 5 -->
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <version>5.7.0</version> <!-- Используйте актуальную версию JUnit 5 -->
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.9.2</version>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-junit-jupiter</artifactId>
-            <version>5.7.0</version>
+            <artifactId>mockito-core</artifactId>
+            <version>3.6.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -104,9 +95,15 @@
         </dependency>
 
         <dependency>
-            <groupId>ru.t1academy</groupId>
+            <groupId>ru.t1-academy</groupId>
             <artifactId>in-memory-message-broker</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.3</version>
         </dependency>
     </dependencies>
 
@@ -116,19 +113,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.3</version> <!-- Актуальная версия плагина -->
-            </plugin>
-
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
