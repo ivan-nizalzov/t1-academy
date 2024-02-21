@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
-      <change afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/broker/MessageBroker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/broker/MessageBrokerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dto/SupportPhraseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ru/t1academy/controller/SupportControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/InMemoryMessageBroker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisherImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/queue/MessageQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/queue/MessageQueueImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/test/java/ru/t1academy/messageBroker/InMemoryMessageBrokerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/SupportServiceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/SupportServiceMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SubscriberBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/bpp/SubscriberBeanPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/subscriber/MessageSubscriber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/subscriber/MessageSubscriberImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +87,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.t1academy.controller" />
@@ -257,7 +234,7 @@
       <workItem from="1708411396203" duration="2531000" />
       <workItem from="1708441881218" duration="693000" />
       <workItem from="1708496838146" duration="14423000" />
-      <workItem from="1708512645773" duration="10551000" />
+      <workItem from="1708512645773" duration="11368000" />
     </task>
     <task id="LOCAL-00001" summary="added ApplicationContext">
       <created>1707753664511</created>
@@ -315,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708441974029</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <created>1708523457356</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708523457356</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
