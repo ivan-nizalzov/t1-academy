@@ -1,48 +1,43 @@
 package ru.t1academy.service;
 
-import ru.t1academy.context.annotation.stereotype.Service;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import ru.t1academy.dto.SupportPhraseMapper;
+import ru.t1academy.messageBroker.annotation.Subscriber;
+import ru.t1academy.messageBroker.broker.MessageBroker;
 import ru.t1academy.model.SupportPhrase;
 import ru.t1academy.repository.SupportRepository;
 
-import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
+@Slf4j
 @Service
+@RequiredArgsConstructor
 public class SupportServiceImpl implements SupportService {
-    public SupportRepository supportRepository;
+    private final SupportRepository supportRepository;
+    private final SupportPhraseMapper supportPhraseMapper;
+    private final MessageBroker<SupportPhrase> messageBroker;
 
-    public SupportServiceImpl(SupportRepository supportRepository) {
-        this.supportRepository = supportRepository;
+    @Subscriber
+    public SupportPhrase subscribe() {
+        SupportPhrase supportPhrase = messageBroker.poll();
+        if (supportPhrase != null) {
+            supportRepository.save(supportPhrase);
+        }
+        return supportPhrase;
     }
 
     @Override
     public SupportPhrase getRandomSupportPhrase() {
         List<String> allPhrases = supportRepository.getAllSupportPhrases();
         Collections.shuffle(allPhrases);
-
+        log.info("Get a random support phrase.");
         return allPhrases.stream()
                 .findFirst()
-                .map(this::makeSupportPhrase)
+                .map(supportPhraseMapper::stringToSupportPhrase)
                 .orElseThrow();
-    }
-
-    @Override
-    public void addSupportPhrase(SupportPhrase supportPhrase) throws IOException {
-        if (supportPhrase == null) {
-            throw new IOException("Support words cannot be empty!");
-        }
-
-        if (supportRepository.isPhraseAlreadyAdded(supportPhrase.content())) {
-            throw new IOException("The support words have already added!");
-        } else {
-            supportRepository.addSupportPhrase(supportPhrase.content());
-        }
-
-    }
-
-    private SupportPhrase makeSupportPhrase(String words) {
-        return new SupportPhrase(words);
     }
 
 }

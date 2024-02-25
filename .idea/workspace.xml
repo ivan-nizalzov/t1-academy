@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="fixed DispatcherServlet and ApplicationContext">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,13 +19,14 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dispatcher-servlet" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +36,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -56,20 +60,45 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ivan/GitHub/innotech_backend-app_context",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "/home/ivan/GitHub/t1-academy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.18688846",
+    "project.structure.side.proportion": "0.22375916",
+    "spring.configuration.checksum": "4b482be4affd23d723ce9822b96761b7",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.PsyDispatcherServletTest.shouldReturnSuccessForPostRequest">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.t1academy.controller" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.t1academy.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SupportControllerTest">
     <configuration name="PsyApplicationContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="help-service" />
       <extension name="coverage">
@@ -101,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportControllerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="help-service" />
       <extension name="coverage">
         <pattern>
@@ -110,13 +139,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerImplTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportControllerImplTest.shouldGetPhraseFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportControllerTest.shouldReturnSupportPhraseForGetRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="help-service" />
       <extension name="coverage">
         <pattern>
@@ -125,35 +154,63 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerImplTest" />
-      <option name="METHOD_NAME" value="shouldGetPhraseFromList" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnSupportPhraseForGetRequest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportControllerTest.shouldSaveSupportPhraseForPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="help-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.t1academy.service.*" />
+          <option name="PATTERN" value="ru.t1academy.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.t1academy.service" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.service.SupportServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
+      <option name="METHOD_NAME" value="shouldSaveSupportPhraseForPostRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="help-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="help-service" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryMessageBroker" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="in-memory--message-broker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.messageBroker.InMemoryMessageBroker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportServiceMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="help-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.SupportServiceMain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SupportControllerTest" />
+        <item itemvalue="JUnit.SupportControllerTest.shouldSaveSupportPhraseForPostRequest" />
+        <item itemvalue="JUnit.SupportControllerTest.shouldReturnSupportPhraseForGetRequest" />
         <item itemvalue="JUnit.PsyDispatcherServletTest.shouldReturnSuccessForPostRequest" />
         <item itemvalue="JUnit.PsyApplicationContextTest" />
-        <item itemvalue="JUnit.SupportServiceImplTest" />
-        <item itemvalue="JUnit.SupportControllerImplTest" />
-        <item itemvalue="JUnit.SupportControllerImplTest.shouldGetPhraseFromList" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +225,16 @@
       <workItem from="1706638680306" duration="160000" />
       <workItem from="1707720445498" duration="6504000" />
       <workItem from="1707727686955" duration="23137000" />
-      <workItem from="1707804517376" duration="13625000" />
+      <workItem from="1707804517376" duration="14761000" />
+      <workItem from="1707838348316" duration="37000" />
+      <workItem from="1707839862197" duration="17000" />
+      <workItem from="1708322273394" duration="818000" />
+      <workItem from="1708356482525" duration="1109000" />
+      <workItem from="1708361352135" duration="3253000" />
+      <workItem from="1708411396203" duration="2531000" />
+      <workItem from="1708441881218" duration="693000" />
+      <workItem from="1708496838146" duration="14423000" />
+      <workItem from="1708512645773" duration="11368000" />
     </task>
     <task id="LOCAL-00001" summary="added ApplicationContext">
       <created>1707753664511</created>
@@ -198,7 +264,42 @@
       <option name="project" value="LOCAL" />
       <updated>1707817617889</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactored DispatcherServlet">
+      <created>1707818973957</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707818973957</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <created>1708363264225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708363264225</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <created>1708364729999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708364729999</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <created>1708441974029</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708441974029</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <created>1708523457356</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708523457356</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +309,9 @@
     <MESSAGE value="added ApplicationContext" />
     <MESSAGE value="changed README.md" />
     <MESSAGE value="fixed DispatcherServlet and ApplicationContext" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed DispatcherServlet and ApplicationContext" />
+    <MESSAGE value="refactored DispatcherServlet" />
+    <MESSAGE value="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -223,5 +326,6 @@
     <SUITE FILE_PATH="coverage/t1_academy$PsyDispatcherServletTest_shouldReturnSuccessForPostRequest.ic" NAME="PsyDispatcherServletTest.shouldReturnSuccessForPostRequest Coverage Results" MODIFIED="1707815985691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ru.t1academy.dispatcher.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/t1_academy$SupportServiceMain.ic" NAME="SupportServiceMain Coverage Results" MODIFIED="1708500780876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

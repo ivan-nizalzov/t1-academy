@@ -2,23 +2,23 @@
 
 ----
 
-### An approach to develop a DI-framework like Spring Core.
+### An approach to develop a DI-framework like Spring Core and In-Memory Message Broker like Apache Kafka.
 
 ----
 
 ### I've implemented:
-1. DispatcherServlet;
-2. ApplicationContext;
-3. Logging invocation using Dynamic Proxy pattern.
+1. BeanPostProcessor;
+2. In-Memory Message Broker.
 
 ----
 ### Tech Stack::
 1. Java 17;
-2. Jakarta EE;
-3. Maven;
-4. Jackson;
-5. Mockito;
-6. Docker.
+2. Spring Boot 3.2;
+3. Lombok
+4. Maven;
+5. Jackson;
+6. Mockito;
+7. Docker.
 
 ----
 ### How to run:
