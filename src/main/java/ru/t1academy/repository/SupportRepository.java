@@ -11,10 +11,10 @@ import java.util.concurrent.ConcurrentHashMap;
 @Repository
 @RequiredArgsConstructor
 public class SupportRepository {
-    private static final Map<String, Integer> psychologySupportMap = new ConcurrentHashMap<>();
+    private static final Map<String, SupportPhrase> psychologySupportMap = new ConcurrentHashMap<>();
 
     static {
-        psychologySupportMap.put("A random support phrase", 1);
+        psychologySupportMap.put("A random support phrase", new SupportPhrase("A random support phrase"));
     }
 
     public List<String> getAllSupportPhrases() {
@@ -26,8 +26,8 @@ public class SupportRepository {
         return psychologySupportMap.containsKey(words);
     }
 
-    public void save(SupportPhrase message) {
-        psychologySupportMap.put(message.content(), 1);
+    public void save(SupportPhrase supportPhrase) {
+        psychologySupportMap.put(supportPhrase.content(), supportPhrase);
     }
 
 }

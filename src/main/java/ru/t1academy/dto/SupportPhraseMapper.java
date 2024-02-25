@@ -5,8 +5,12 @@ import ru.t1academy.model.SupportPhrase;
 
 @Component
 public class SupportPhraseMapper {
-    public SupportPhrase stringToSupportPhrase(String words) {
+    public SupportPhrase toSupportPhrase(String words) {
         return new SupportPhrase(words);
+    }
+
+    public String toString(SupportPhrase supportPhrase) {
+        return supportPhrase.content();
     }
 
 }

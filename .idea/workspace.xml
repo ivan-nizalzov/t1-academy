@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
+    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/broker/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/broker/KafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/KafkaConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/exception/AlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/exception/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/annotation/Subscriber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/broker/MessageBroker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/broker/MessageBrokerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/java/ru/t1academy/messageBroker/publisher/MessagePublisherImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in-memory-message-broker/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/bpp/SubscriberBeanPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/config/SupportConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/controller/SupportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/dto/SupportPhraseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/dto/SupportPhraseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/repository/SupportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/t1academy/service/SupportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,15 +52,15 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dispatcher-servlet" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,6 +114,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.18688846",
     "project.structure.side.proportion": "0.22375916",
+    "settings.editor.selected.configurable": "spring.boot",
     "spring.configuration.checksum": "4b482be4affd23d723ce9822b96761b7",
     "vue.rearranger.settings.migration": "true"
   }
@@ -97,6 +132,13 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.t1academy.controller" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="JUnit.SupportControllerTest">
     <configuration name="PsyApplicationContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -177,26 +219,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="help-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="help-service" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InMemoryMessageBroker" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="in-memory--message-broker" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.messageBroker.InMemoryMessageBroker" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SupportServiceMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="help-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.SupportServiceMain" />
@@ -215,6 +237,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="" />
@@ -235,6 +260,9 @@
       <workItem from="1708441881218" duration="693000" />
       <workItem from="1708496838146" duration="14423000" />
       <workItem from="1708512645773" duration="11368000" />
+      <workItem from="1708869703294" duration="705000" />
+      <workItem from="1708874407012" duration="4929000" />
+      <workItem from="1708885492724" duration="2737000" />
     </task>
     <task id="LOCAL-00001" summary="added ApplicationContext">
       <created>1707753664511</created>
@@ -305,6 +333,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added ApplicationContext" />
     <MESSAGE value="changed README.md" />
@@ -322,10 +361,14 @@
       </pinned-members>
     </pin-to-top-manager>
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/t1_academy$SupportServiceMain.ic" NAME="SupportServiceMain Coverage Results" MODIFIED="1708500780876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/t1_academy$PsyDispatcherServletTest_shouldReturnSuccessForPostRequest.ic" NAME="PsyDispatcherServletTest.shouldReturnSuccessForPostRequest Coverage Results" MODIFIED="1707815985691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ru.t1academy.dispatcher.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/t1_academy$SupportServiceMain.ic" NAME="SupportServiceMain Coverage Results" MODIFIED="1708500780876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
