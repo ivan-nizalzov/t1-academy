@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: localhost:19092
     producer:
       enable-idempotence: true
       key-serializer: org.apache.kafka.common.serialization.StringSerializer

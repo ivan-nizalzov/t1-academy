@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/t1academy/controller/SupportControllerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="dd080e31-50fe-4a68-a399-3c01652aae78" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,31 +13,13 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -56,150 +32,61 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2bgZS1EpxutEgXux1Xk3POgCKAq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2cu7bMPGhf4JmoFqnDTBIBfVYUM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ivan/GitHub/t1-academy&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.18688846&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.22375916&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4b482be4affd23d723ce9822b96761b7&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ivan/GitHub/t1academy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "4b482be4affd23d723ce9822b96761b7",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ru.t1academy.controller" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="ru.t1academy.controller" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.T1academyApplication">
-    <configuration name="PsyApplicationContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="help-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.t1academy.context.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.t1academy.context" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.context.PsyApplicationContextTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PsyDispatcherServletTest.shouldReturnSuccessForPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="help-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.t1academy.dispatcher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.t1academy.dispatcher" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.dispatcher.PsyDispatcherServletTest" />
-      <option name="METHOD_NAME" value="shouldReturnSuccessForPostRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SupportControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="help-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.t1academy.controller.*" />
+          <option name="PATTERN" value="ru.t1academy.helpservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
+      <option name="PACKAGE_NAME" value="ru.t1academy.helpservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.t1academy.helpservice.controller.SupportControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportControllerTest.shouldReturnSupportPhraseForGetRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="help-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.t1academy.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
-      <option name="METHOD_NAME" value="shouldReturnSupportPhraseForGetRequest" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="t1academy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportControllerTest.shouldSaveSupportPhraseForPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="help-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.t1academy.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.t1academy.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.t1academy.controller.SupportControllerTest" />
-      <option name="METHOD_NAME" value="shouldSaveSupportPhraseForPostRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SupportServiceMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="help-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.SupportServiceMain" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="t1academy" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="T1academyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="help-service (2) (ru.t1academy)" />
+      <module name="help-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.t1academy.helpservice.T1academyApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,146 +95,23 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SupportControllerTest" />
-        <item itemvalue="JUnit.SupportControllerTest.shouldSaveSupportPhraseForPostRequest" />
-        <item itemvalue="JUnit.SupportControllerTest.shouldReturnSupportPhraseForGetRequest" />
-        <item itemvalue="JUnit.PsyDispatcherServletTest.shouldReturnSuccessForPostRequest" />
-        <item itemvalue="JUnit.PsyApplicationContextTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SpringBeansView">
-    <option name="beanDetailsProportion" value="0.3" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f83246cd-87fd-4f3d-886f-59785220cd2d" name="Changes" comment="" />
-      <created>1706638679210</created>
+      <changelist id="dd080e31-50fe-4a68-a399-3c01652aae78" name="Changes" comment="" />
+      <created>1708949680870</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706638679210</updated>
-      <workItem from="1706638680306" duration="160000" />
-      <workItem from="1707720445498" duration="6504000" />
-      <workItem from="1707727686955" duration="23137000" />
-      <workItem from="1707804517376" duration="14761000" />
-      <workItem from="1707838348316" duration="37000" />
-      <workItem from="1707839862197" duration="17000" />
-      <workItem from="1708322273394" duration="818000" />
-      <workItem from="1708356482525" duration="1109000" />
-      <workItem from="1708361352135" duration="3253000" />
-      <workItem from="1708411396203" duration="2531000" />
-      <workItem from="1708441881218" duration="693000" />
-      <workItem from="1708496838146" duration="14423000" />
-      <workItem from="1708512645773" duration="11368000" />
-      <workItem from="1708869703294" duration="705000" />
-      <workItem from="1708874407012" duration="4929000" />
-      <workItem from="1708885492724" duration="2737000" />
+      <updated>1708949680870</updated>
+      <workItem from="1708949683213" duration="992000" />
+      <workItem from="1708950852607" duration="230000" />
     </task>
-    <task id="LOCAL-00001" summary="added ApplicationContext">
-      <created>1707753664511</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1707753664511</updated>
-    </task>
-    <task id="LOCAL-00002" summary="changed README.md">
-      <created>1707753798763</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1707753798763</updated>
-    </task>
-    <task id="LOCAL-00003" summary="changed README.md">
-      <created>1707753823981</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1707753823981</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fixed DispatcherServlet and ApplicationContext">
-      <created>1707817617889</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1707817617889</updated>
-    </task>
-    <task id="LOCAL-00005" summary="refactored DispatcherServlet">
-      <created>1707818973957</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1707818973957</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
-      <created>1708363264225</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1708363264225</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
-      <created>1708364729999</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1708364729999</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
-      <created>1708441974029</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1708441974029</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker">
-      <created>1708523457356</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1708523457356</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added ApplicationContext" />
-    <MESSAGE value="changed README.md" />
-    <MESSAGE value="fixed DispatcherServlet and ApplicationContext" />
-    <MESSAGE value="refactored DispatcherServlet" />
-    <MESSAGE value="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added Spring Boot 3.x, Lombok, In-Memory Message Broker" />
-  </component>
-  <component name="XDebuggerManager">
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="jdk.proxy2.$Proxy67" memberName="h" />
-        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
-        <PinnedItemInfo parentTag="ru.t1academy.logging.LoggingInvocationHandler" memberName="logger" />
-      </pinned-members>
-    </pin-to-top-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/t1_academy$PsyDispatcherServletTest_shouldReturnSuccessForPostRequest.ic" NAME="PsyDispatcherServletTest.shouldReturnSuccessForPostRequest Coverage Results" MODIFIED="1707815985691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ru.t1academy.dispatcher.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/t1_academy$SupportServiceMain.ic" NAME="SupportServiceMain Coverage Results" MODIFIED="1708500780876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
