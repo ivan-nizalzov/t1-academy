@@ -1,0 +1,27 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:19092
+    producer:
+      enable-idempotence: true
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        acks: all
+        spring:
+          json:
+            add:
+              type:
+                headers: false
+      transaction-id-prefix: transaction
+    consumer:
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: "phrase-consumer"
+      isolation-level: read_committed
+    streams:
+      replication-factor: 1
+
+kafka:
+  topic-name: support-message-events
+  enabled: true

@@ -2,13 +2,7 @@
 
 ----
 
-### An approach to develop a DI-framework like Spring Core and In-Memory Message Broker like Apache Kafka.
-
-----
-
-### I've implemented:
-1. BeanPostProcessor;
-2. In-Memory Message Broker.
+### A classic REST-like app with in-memory repository, Spring Boot 3.2.0, and Apache Kafka.
 
 ----
 ### Tech Stack::
@@ -18,9 +12,10 @@
 4. Maven;
 5. Jackson;
 6. Mockito;
-7. Docker.
+7. Docker;
+8. Apache Kafka.
 
 ----
 ### How to run:
 1. `mvn clean package`
-2. `docker-compose up`
+2. `docker compose up`
